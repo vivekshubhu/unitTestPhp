@@ -1,0 +1,1 @@
+{"version":1,"defects":{"TDD\\Test\\ReceiptTest::testTotal":3,"TDD\\Test\\ReceiptTest::testTax":3},"times":{"TDD\\Test\\ReceiptTest::testTotal":0.003,"TDD\\Test\\ReceiptTest::testTax":0.002}}

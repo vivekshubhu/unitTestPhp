@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    colors="true"
+    processIsolation="false"
+    stopOnFailure="false"
+    bootstrap="./vendor/autoload.php"
+    >
+    <php>
+        <ini name="memory_limit" value="-1"/>
+        <ini name="apc.enable_cli" value="1"/>
+    </php>
+
+    <!-- Add any additional test suites you want to run here -->
+    <testsuites>
+        <testsuite name="app">
+            <directory>./tests</directory>
+            <exclude>./tests/ItemTableTest.php</exclude>
+        </testsuite>
+        <testsuite name="receipt">
+            <directory>./tests</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- to get report command vendor/bin/phpunit \-\-coverage-html cover -->
+    <!-- <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter> -->
+
+    <!--
+    <logging>
+        <log
+            type="coverage-html"
+            target="./tmp/coverage/html/"
+            charset="UTF-8"
+            highlight="true"
+            lowUpperBound="60"
+            highLowerBound="90"
+        />
+        <log
+            type="coverage-clover"
+            target="./tmp/coverage/clover.xml"
+        />
+    </logging>
+    -->
+</phpunit>

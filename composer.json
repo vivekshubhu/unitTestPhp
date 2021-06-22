@@ -1,0 +1,17 @@
+{
+    "name": "bigyan/unit-testing",
+    "autoload": {
+        "psr-4": {
+            "Bigyan\\UnitTesting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vivekshubhu",
+            "email": "bibek.karki001@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
